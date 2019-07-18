@@ -12,3 +12,11 @@ h5{
   padding-top:  50px;
 
 }
+.userImage{
+ box-align: left;
+ box-align:top;
+}
+#Image{
+  display: inline-block;
+}
+
