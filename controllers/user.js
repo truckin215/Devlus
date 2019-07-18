@@ -10,7 +10,7 @@ exports.description = (req,res) => {
 }
 
 exports.profile = (req,res) => {
-    res.render('profiles')
+    res.render('profile')
 }
 
 exports.input = (req,res) => {
