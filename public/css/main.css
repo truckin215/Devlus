@@ -12,3 +12,29 @@ h5{
   padding-top:  50px;
 
 }
+.userImage{
+ box-align: left;
+ box-align:top;
+}
+#Image{
+  display: inline-block;
+}
+
+.mainRunner {
+  border: 1px solid #000;
+  position: relative;
+}
+
+.img1 {
+  border: 1px solid #f00;
+  position: relative;
+  z-index: 2;
+}
+
+.img2 {
+  border: 1px solid #0f0;
+  position: relative;
+  z-index: 1;
+  top: -12px;
+  left: 12px;
+}
