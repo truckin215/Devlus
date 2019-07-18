@@ -1,19 +1,16 @@
 const express = require('express');
 const router  = express.Router();
 const userController = require('../controllers/user')
-const isAuthenticated = require('../config/middleware/isAuthenticated');
 
-router.get( '/user/signup', userController.register );
+router.get('/', userController.home );
 
-router.get( '/user/login', userController.userLogin )
+router.get('/description', userController.description)
 
-router.post( '/user/signup', userController.signup );
+router.get('/profile', userController.profile)
 
-router.post('/user/login', userController.userSignin );
+router.get('/input',userController.input)
 
-router.get('/profile', isAuthenticated, userController.userProfile);
-
-router.get('/logout', userController.userLogout);
+router.get('/savedProjects', userController.savedProjects)
 
 module.exports = router;
 
