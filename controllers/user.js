@@ -1,33 +1,11 @@
 const passport = require('../config/passport');
 
-// GET user/signup
-exports.register = (req, res) => {
-    res.render('register');
-}
-// GET /user/login
-exports.userLogin = (req, res) => {
-    res.render('login');
-}
-// GET /profile
-exports.userProfile = (req, res) => {
-    res.render('profile', {currentUser:req.user});
+// GET home page at /
+exports.home = (req, res) => {
+    res.render('home');
 }
 
-// GET for /logout
-exports.userLogout = (req, res) => {
-    req.logout();
-    res.redirect('/user/login');
+// get description page at /description
+exports.description = (req,res) => {
+    res.render('description')
 }
-
-// POST /user/signup
-exports.signup = passport.authenticate('local-signup', {
-    successRedirect: '/profile',
-    failureRedirect: '/user/signup' 
-});
-
-// POST user/login
-exports.userSignin = passport.authenticate('local', { 
-    successRedirect: '/profile',
-    failureRedirect: '/user/login' 
-});
-
