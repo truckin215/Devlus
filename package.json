@@ -1,0 +1,32 @@
+{
+  "name": "devlus",
+  "version": "1.0.0",
+  "description": "A social meetup site for programmers.",
+  "main": "app.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^5.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truckin215/Devlus.git"
+  },
+  "author": "Connor Murray, Isaiah Adams, Matthew Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truckin215/Devlus/issues"
+  },
+  "homepage": "https://github.com/truckin215/Devlus#readme"
+}
