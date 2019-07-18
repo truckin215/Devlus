@@ -1,4 +1,4 @@
-// this is my route manager 
+// Makes routes work
 const express = require('express');
 const user    = require('./user');
 

@@ -1,4 +1,3 @@
-const passport = require('../config/passport');
 
 // GET home page at /
 exports.home = (req, res) => {
