@@ -5,41 +5,33 @@ module.exports = function(sequelize, DataTypes){
     var Profile = sequelize.define("Profile", {
         UserID: {
             type: DataTypes.INTEGER, 
-            allowNull: false
-            
+            allowNull: false  
         },
-        Username: {
+        projectName: {
             type: DataTypes.STRING,
             unique:true
         },
-        Password: {
+        description: {
             type:DataTypes.STRING,
             allowNull: false
         },
-        dob: {
+        devCount: {
             type:DataTypes.INTEGER
-        },
-        firstname: {
-            type:DataTypes.STRING
-        },
-        lastname: {
-            type:DataTypes.STRING
         },
         location: {
             type:DataTypes.STRING
         },
-        age: {
+        payment: {
             type:DataTypes.INTEGER
         },
-        github: {
-            type:DataTypes.STRING,
-            unique:true
+        length: {
+            type:DataTypes.INTEGER,
         },
-        avatar:{
+        image:{
             type:DataTypes.STRING
         },
-        Role: {
-            type:DataTypes.INTEGER
+        startdate: {
+            type:DataTypes.STRING
         }
     });
 
