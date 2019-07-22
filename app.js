@@ -1,16 +1,29 @@
-// links express server, by requiring package
+require('dotenv').config() 
+
 const express = require('express');
-// calling express and storing its value in a variable 
+const routes  = require('./routes');
+const session = require('express-session');
+const bodyParser = require('body-parser').urlencoded({extended: false})
+// const database = require('./models');
+
+
 const app = express();
-// routing any traffic going to the root url and sending back a response
-app.get('/', function(request, response){
-    response.send("Hello World!!!! we are live!");
-});
-// adding pages, by routing any traffic thats going to /James then sending back a response
-app.get("/James", function(req,res){
-    res.send("yo your in my about me page.")
-});
-// set port
-app.listen(3000);
-// testing if server is running
-console.log("server is live and on port 3000");
+
+// const port = process.env.PORT || 3000 ;
+
+app.set("view engine","ejs");
+
+app.use(express.static('./public'));
+app.use(bodyParser)
+app.use(routes);
+
+
+// database.sequelize.sync().then(function(){
+//     app.listen(port, function(err){
+//         if (err)
+//             console.log(err)
+//         console.log('Server is live on port: ' + port)
+//     })
+// });
+app.listen(3000)
+console.log('live on port 3000')
