@@ -20,3 +20,7 @@ exports.input = (req,res) => {
 exports.savedProjects = (req,res) => {
     res.render('savedProjects')
 }
+// GET signup page at /signup
+exports.signup = (req,res) => {
+    res.render('signup')
+}
