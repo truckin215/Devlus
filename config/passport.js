@@ -1,6 +1,7 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const db = require('../models');
+var routes = require('../routes/index');
 
 // telling passport we want to use local strategy, in other words we want to use
 // email and password
@@ -54,3 +55,16 @@ passport.use('local-signup', new LocalStrategy(
       });
     }
 ));
+
+// to authenticate users to a cookie we must serialize the user session
+passport.serializeUser(function(user, done) {
+    done(null, user);
+});
+  
+// following request need there session to be deserialize 
+passport.deserializeUser(function(user, done) {
+    done(null, user )
+});
+
+// exporting passport for our app to use it
+module.exports = passport;
