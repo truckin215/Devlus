@@ -2,7 +2,7 @@
 // set it to export because our index.js file is expecting an 
 // export of a model
 module.exports = function(sequelize, DataTypes){
-    var devProfile = sequelize.define("devProfile", {
+    var devProjects = sequelize.define("devProjects", {
         projectID: {
             type: DataTypes.INTEGER, 
             allowNull: false
@@ -22,5 +22,5 @@ module.exports = function(sequelize, DataTypes){
         }
     });
 
-    return devProfile
+    return devProjects
 }

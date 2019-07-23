@@ -3,7 +3,7 @@
 // export of a model
 module.exports = function(sequelize, DataTypes){
     var Projects = sequelize.define("Projects", {
-        UserID: {
+        ProjectID: {
             type: DataTypes.INTEGER, 
             allowNull: false  
         },
@@ -25,7 +25,7 @@ module.exports = function(sequelize, DataTypes){
             type:DataTypes.INTEGER
         },
         length: {
-            type:DataTypes.INTEGER,
+            type:DataTypes.STRING,
         },
         image:{
             type:DataTypes.STRING
