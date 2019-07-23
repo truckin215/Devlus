@@ -1,3 +1,4 @@
+const passport = require('../config/passport');
 
 // GET home page at /
 exports.home = (req, res) => {
@@ -33,3 +34,9 @@ exports.savedProjects = (req,res) => {
 exports.signup = (req,res) => {
     res.render('signup')
 }
+
+// POST /user/signup
+exports.signup = passport.authenticate('local-signup', {
+    successRedirect: '/profile',
+    failureRedirect: '/signup' 
+});
