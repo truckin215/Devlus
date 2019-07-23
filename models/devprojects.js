@@ -8,18 +8,10 @@ module.exports = function(sequelize, DataTypes){
             allowNull: false
             
         },
-        devID: {
+        UserID: {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        hold: {
-            type:DataTypes.INTEGER,
-            allowNull: false
-        },
-        UserID: {
-            type:DataTypes.INTEGER,
-            allowNull:false
-        }
     });
 
     return devProjects

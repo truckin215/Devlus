@@ -3,12 +3,9 @@
 // export of a model
 module.exports = function(sequelize, DataTypes){
     var userFavorites = sequelize.define("userFavorites", {
-        DevID: {
+        ProjectID: {
             type: DataTypes.INTEGER, 
             allowNull: false  
-        },
-        hold: {
-            type: DataTypes.INTEGER,
         },
         UserID: {
             type:DataTypes.INTEGER,

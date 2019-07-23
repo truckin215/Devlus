@@ -3,7 +3,7 @@
 // export of a model
 module.exports = function(sequelize, DataTypes){
     var Projects = sequelize.define("Projects", {
-        ProjectID: {
+        UserID: {
             type: DataTypes.INTEGER, 
             allowNull: false  
         },
@@ -34,7 +34,7 @@ module.exports = function(sequelize, DataTypes){
             type:DataTypes.STRING
         },
         close: {
-            type:DataTypes.INTEGER
+            type:DataTypes.BOOLEAN
         }
     });
 
