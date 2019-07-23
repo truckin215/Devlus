@@ -25,7 +25,7 @@ module.exports = function(sequelize, DataTypes){
             type:DataTypes.INTEGER
         },
         length: {
-            type:DataTypes.INTEGER,
+            type:DataTypes.STRING,
         },
         image:{
             type:DataTypes.STRING
@@ -34,7 +34,7 @@ module.exports = function(sequelize, DataTypes){
             type:DataTypes.STRING
         },
         close: {
-            type:DataTypes.INTEGER
+            type:DataTypes.BOOLEAN
         }
     });
 

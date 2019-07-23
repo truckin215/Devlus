@@ -2,12 +2,7 @@
 // set it to export because our index.js file is expecting an 
 // export of a model
 module.exports = function(sequelize, DataTypes){
-    var Profile = sequelize.define("Profile", {
-        UserID: {
-            type: DataTypes.INTEGER, 
-            allowNull: false
-            
-        },
+    var user = sequelize.define("user", {
         Username: {
             type: DataTypes.STRING,
             unique:true
@@ -43,5 +38,5 @@ module.exports = function(sequelize, DataTypes){
         }
     });
 
-    return Profile
+    return user
 }
