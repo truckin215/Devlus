@@ -11,6 +11,12 @@ const app = express();
 
 const port = process.env.PORT || 3000 ;
 
+// adding context to our request
+app.use( (req, res, next ) => {
+    req.context = { db: database }
+    next();
+} )
+
 app.set("view engine","ejs");
 
 app.use(express.static('./public'));
