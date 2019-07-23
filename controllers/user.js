@@ -22,9 +22,9 @@ exports.description = (req,res) => {
 exports.profile = (req,res) => {
     res.render('profile')
 }
-// GET input page at /input
-exports.input = (req,res) => {
-    res.render('input')
+// GET input page at /singleProject
+exports.singleProject = (req,res) => {
+    res.render('singleProject')
 }
 // GET savedProjects page at /savedProjects
 exports.savedProjects = (req,res) => {

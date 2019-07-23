@@ -8,7 +8,7 @@ router.get('/description', userController.description)
 
 router.get('/profile', userController.profile)
 
-router.get('/input',userController.input)
+router.get('/singleProject',userController.singleProject)
 
 router.get('/savedProjects', userController.savedProjects)
 
