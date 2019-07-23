@@ -1,7 +1,17 @@
+const passport = require('../config/passport');
 
 // GET home page at /
 exports.home = (req, res) => {
-    res.render('home');
+    req.context.db.Projects.findAll({
+        attributes: ['id', 'projectName']
+    }).then(function(results){
+        console.log(results)
+        // rendering tasks view and passing taskToDo data
+        res.render('home', {project: results});
+    }).catch(function(err){
+        console.log(err);
+        res.json(err);
+    });
 }
 
 // get description page at /description
@@ -24,3 +34,9 @@ exports.savedProjects = (req,res) => {
 exports.signup = (req,res) => {
     res.render('signup')
 }
+
+// POST /user/signup
+exports.signup = passport.authenticate('local-signup', {
+    successRedirect: '/profile',
+    failureRedirect: '/signup' 
+});

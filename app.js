@@ -4,12 +4,19 @@ const express = require('express');
 const routes  = require('./routes');
 const database = require('./models');
 const session = require('express-session');
+const passport = require('./config/passport');
 const bodyParser = require('body-parser').urlencoded({extended: false})
 
 
 const app = express();
 
 const port = process.env.PORT || 3000 ;
+
+// adding context to our request
+app.use( (req, res, next ) => {
+    req.context = { db: database }
+    next();
+} )
 
 app.set("view engine","ejs");
 
