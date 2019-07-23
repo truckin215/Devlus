@@ -4,7 +4,7 @@ const userController = require('../controllers/user')
 
 router.get('/', userController.home );
 
-router.get('/description', userController.description)
+router.get('/addproject', userController.addproject)
 
 router.get('/profile', userController.profile)
 

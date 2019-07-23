@@ -14,9 +14,9 @@ exports.home = (req, res) => {
     });
 }
 
-// get description page at /description
-exports.description = (req,res) => {
-    res.render('description')
+// get description page at /addproject
+exports.addproject = (req,res) => {
+    res.render('addproject')
 }
 // GET profile page at /profile
 exports.profile = (req,res) => {
