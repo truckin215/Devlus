@@ -12,5 +12,7 @@ router.get('/input',userController.input)
 
 router.get('/savedProjects', userController.savedProjects)
 
+router.get('/signup', userController.signup)
+
 module.exports = router;
 

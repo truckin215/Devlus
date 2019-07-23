@@ -2,7 +2,7 @@
     "development": {
       "username": "admin",
       "password": "student",
-      "database": "Ptinder",
+      "database": "Devlus",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
