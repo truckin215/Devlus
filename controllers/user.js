@@ -30,8 +30,18 @@ exports.singleProject = (req,res) => {
 exports.savedProjects = (req,res) => {
     res.render('savedProjects')
 }
+// GET /signup
+exports.signup = (req,res) => {
+    res.render('signup')
+}
+
+// GET /
+exports.main = (req,res) => {
+    res.render('main')
+}
+
 // POST /signup
-exports.signup = passport.authenticate('local-signup', {
-    successRedirect: '/profile',
-    failureRedirect: '/signup' 
-});
+// exports.signup = p   assport.authenticate('local-signup', {
+//     successRedirect: '/profile',
+//     failureRedirect: '/signup' 
+// });
