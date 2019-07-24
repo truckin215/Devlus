@@ -186,3 +186,107 @@ button {
 .footer a.sign-in-link {
   color: #3498DB;
 }
+
+@import "compass/css3";
+
+// SETTINGS -----------------
+
+$size : 80px;
+$swipe-colour : #000;
+$swipe-arrow-colour : lighten($swipe-colour, 35%);
+$swipe-hand-skew : 5deg;
+$swipe-distance : 0.1em;
+$swipe-animation-name : swipe;
+$swipe-animation-rotate-name : swipe-rotate;
+$swipe-animation-speed : 2700ms;
+$swipe-animation-delay : 250ms;
+$swipe-animation-timing-func : linear;
+
+// GENERAL ------------------
+
+html, body{ 
+  height: 100%;
+  min-height: 100%;
+}
+
+body{
+  height: 100%;
+  font-size: $size;
+  background: #eeeeee;
+  background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
+  background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%);
+  background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%);
+  background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%);
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+}
+
+.stage{
+  width: 100%;
+  padding: 7rem 2rem 2rem;
+  text-align: center;
+}
+
+*,
+*:after,
+*:before{
+ @include box-sizing(border-box);
+}
+
+// SWIPE ELEMENT ------------
+
+.swipe{
+  display: inline-block;
+  color: $swipe-colour;
+  
+  @include animation-name( $swipe-animation-name );
+  @include animation-duration( $swipe-animation-speed );
+  @include animation-delay( $swipe-animation-delay );
+  @include animation-timing-function( $swipe-animation-timing-func );
+  @include animation-iteration-count( infinite );
+  
+  .fa-long-arrow-left,
+  .fa-long-arrow-right{
+    font-size: 0.65em;
+    color: $swipe-arrow-colour;
+  }
+  
+  .fa-long-arrow-left{ 
+    @include transform( scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(1.25em) );
+  }
+  .fa-long-arrow-right{
+    @include transform( scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(-0.95em) );
+  }
+  
+  .fa-hand-o-up{
+    @include transform( scaleY(1.2) );
+    @include animation-name( $swipe-animation-rotate-name );
+    @include animation-duration( $swipe-animation-speed );
+    @include animation-delay( $swipe-animation-delay );
+    @include animation-timing-function( $swipe-animation-timing-func );
+    @include animation-iteration-count( infinite );
+  }
+}
+
+// SWIPE ANIMATION ----------
+
+@include keyframes( $swipe-animation-name ){
+    0%{ @include transform( translateX(0) ); }
+    10%{ @include transform( translateX(-($swipe-distance)) ); }
+    20%{ @include transform( translateX($swipe-distance) ); }
+    30%{ @include transform( translateX(-($swipe-distance)) ); }
+    40%{ @include transform( translateX($swipe-distance) ); }
+    50%{ @include transform( translateX(0) ); }
+    100%{ @include transform( translateX(0) ); }
+}
+
+@include keyframes( $swipe-animation-rotate-name ){
+    0%{ @include transform( scaleY(1.2) skew(0) ); }
+    10%{ @include transform( scaleY(1.2) skew($swipe-hand-skew) ); }
+    20%{ @include transform( scaleY(1.2) skew(-$swipe-hand-skew) ); }
+    30%{ @include transform( scaleY(1.2) skew($swipe-hand-skew) ); }
+    40%{ @include transform( scaleY(1.2) skew(-$swipe-hand-skew) ); }
+    50%{ @include transform( scaleY(1.2) skew(0) ); }
+    100%{ @include transform( scaleY(1.2) skew(0) ); }
+}
