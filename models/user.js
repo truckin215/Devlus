@@ -3,11 +3,11 @@
 // export of a model
 module.exports = function(sequelize, DataTypes){
     var user = sequelize.define("user", {
-        Username: {
+        username: {
             type: DataTypes.STRING,
             unique:true
         },
-        Password: {
+        password: {
             type:DataTypes.STRING,
             allowNull: false
         },
@@ -33,7 +33,7 @@ module.exports = function(sequelize, DataTypes){
         avatar:{
             type:DataTypes.STRING
         },
-        Role: {
+        role: {
             type:DataTypes.INTEGER
         }
     });

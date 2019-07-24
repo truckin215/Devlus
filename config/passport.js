@@ -11,7 +11,7 @@ passport.use(new LocalStrategy(
       db.User.findOne( { where: { usernameField: usernameField } } ).then( function(dbuser){
         // if there is no user with the provided email
         if (!dbuser) {
-            return done(null, false, { message: 'Incorrect Username.' } );
+            return done(null, false, { message: 'Incorrect username.' } );
         }
         // if there is a user with that email but the password is wrong
         else if (!dbuser.validPassword(password)) {
@@ -28,13 +28,14 @@ passport.use(new LocalStrategy(
 passport.use('local-signup', new LocalStrategy(
     {  passReqToCallback: true }, // allow us to use the entire request coming from our app},
     function(req, username, password, done) {
-      db.User.findOne( { where: { username: username } } ).then( function(dbuser){
+      db.user.findOne( { where: { username: username } } ).then( function(dbuser){
         // to verify that the email is not in use
         if (dbuser) {
             return done(null, false, { message: 'Email is already taken.' } );
         } else  {
             // add user to my database
-            db.User.create({
+            db.user.create({
+                username: username,
                 email: email , 
                 password: password,
                 name: req.body.name
