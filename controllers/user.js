@@ -30,8 +30,33 @@ exports.singleProject = (req,res) => {
 exports.savedProjects = (req,res) => {
     res.render('savedProjects')
 }
+// GET . signin
+exports.login = (req,res) => {
+    res.render('login')
+}
+
+// GET /signup
+exports.signup = (req,res) => {
+    res.render('signup')
+}
+
+// GET /
+exports.main = (req,res) => {
+    res.render('main')
+}
+
+
+
+// Git Oauth
+exports.gitlogin = passport.authenticate('github')
+
+exports.gitlogin = passport.authenticate('github', { failureRedirect: '/user/login',
+successRedirect: '/profile',} );
+
+
+
 // POST /signup
-exports.signup = passport.authenticate('local-signup', {
+exports.postsignup = passport.authenticate('local-signup', {
     successRedirect: '/profile',
     failureRedirect: '/signup' 
 });

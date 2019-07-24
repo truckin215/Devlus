@@ -2,6 +2,8 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const db = require('../models');
 var routes = require('../routes/index');
+var GitHubStrategy = require('passport-github').Strategy;
+
 
 // telling passport we want to use local strategy, in other words we want to use
 // Username and password
@@ -31,12 +33,12 @@ passport.use('local-signup', new LocalStrategy(
       db.user.findOne( { where: { username: username } } ).then( function(dbuser){
         // to verify that the email is not in use
         if (dbuser) {
-            return done(null, false, { message: 'Email is already taken.' } );
+            return done(null, false, { message: 'username is already taken.' } );
         } else  {
             // add user to my database
             db.user.create({
                 username: username,
-                email: email , 
+                // email: email , 
                 password: password,
                 name: req.body.name
             }).then(function (newUser) {
@@ -53,6 +55,19 @@ passport.use('local-signup', new LocalStrategy(
         }
       });
     }
+));
+
+// github Oauth
+passport.use(new GitHubStrategy({
+    clientID: '29528129ad5c7e6e8023',
+    clientSecret: '0f8e2ca5262c2632c05f3dd73f70c64345d75062',
+    callbackURL: "http://127.0.0.1:3000/auth/github/callback"
+  },
+  function(accessToken, refreshToken, profile, cb) {
+    User.findOrCreate({ githubId: profile.id }, function (err, user) {
+      return cb(err, user);
+    });
+  }
 ));
 
 // to authenticate users to a cookie we must serialize the user session
