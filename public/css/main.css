@@ -1,292 +1,170 @@
 body {
-    background-color: #89cff0;
-  }
-  input {
-    width: 100%;
-  }
+  background-color: #89cff0;
+}
+input {
+  width: 100%;
+}
 h5{
-  padding-top: 20px;
+padding-top: 20px;
 }
 .header{
-  padding-top:  50px;
-
+padding-top:  50px;
 }
 .userImage{
- box-align: left;
- box-align:top;
+box-align: left;
+box-align:top;
 }
 #Image{
-  display: inline-block;
+display: inline-block;
 }
-
 .notshowing {
-  display: inline-block;
-  cursor: pointer;
+display: inline-block;
+cursor: pointer;
 }
-
 .bar1{
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 25px 0 6px 0;
-  transition: 0.4s;
+width: 35px;
+height: 5px;
+background-color: #333;
+margin: 25px 0 6px 0;
+transition: 0.4s;
 }
-
 .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
+width: 35px;
+height: 5px;
+background-color: #333;
+margin: 6px 0;
+transition: 0.4s;
 }
-
 /* Rotate first bar */
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
+-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+transform: rotate(-45deg) translate(-9px, 6px) ;
 }
-
 /* Fade out the second bar */
 .change .bar2 {
-  opacity: 0;
+opacity: 0;
 }
-
 /* Rotate last bar */
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
+-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+transform: rotate(45deg) translate(-8px, -8px) ;
 }
-
 section {
-  display: block ;
-  width: 30px;
+display: block ;
+width: 30px;
 }
-
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+margin: 0;
+padding: 0;
+height: 100%;
 }
-
 body {
-  background: #89cff0;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 16px;
+background: #89cff0;
+font-family: 'Segoe UI', sans-serif;
+font-size: 16px;
 }
-
 h1 {
-  font-weight: 100;
-  font-size: 40px;
-  color: white;
-  text-align: center;
+font-weight: 100;
+font-size: 40px;
+color: white;
+text-align: center;
 }
-
 .container {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  background: white;
-  width: 50%;
-  min-width: 400px;
-  min-height: 100%;
-  margin: 0 auto;
-  padding-bottom: 150px;
-  position: relative;
-  box-sizing: border-box;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+background: white;
+width: 50%;
+min-width: 400px;
+min-height: 100%;
+margin: 0 auto;
+padding-bottom: 150px;
+position: relative;
+box-sizing: border-box;
 }
-
 .heading {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-top: 50px;
-  background-color: #3498DB;
-  background-image: url("https://i.imgur.com/Y4IGM7T.jpg");
-  background-size: cover;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding-top: 50px;
+background-color: #3498DB;
+background-image: url("https://i.imgur.com/Y4IGM7T.jpg");
+background-size: cover;
 }
-
 .portrait {
-  position: relative;
-  height: 100px;
-  width: 100px;
-  margin: 30px auto 0;
-  border: 4px solid white;
-  border-radius: 54px;
-  z-index: 2;
+position: relative;
+height: 100px;
+width: 100px;
+margin: 30px auto 0;
+border: 4px solid white;
+border-radius: 54px;
+z-index: 2;
 }
-
 .slant {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin-top: -100px;
-  width: 100%;
-  height: 100px;
-  z-index: 1;
+position: absolute;
+left: 0;
+bottom: 0;
+margin-top: -100px;
+width: 100%;
+height: 100px;
+z-index: 1;
 }
-
 .slant polygon {
-  fill: white;
+fill: white;
 }
-
 .content {
-  margin-top: 20px;
+margin-top: 20px;
 }
-
 dl {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+width: 80%;
+margin: 0 auto;
+text-align: center;
 }
-
 dt,
 dd {
-  margin: 0;
+margin: 0;
 }
-
 dt {
-  padding: 15px 0 5px;
-  color: #AAA;
-  text-transform: uppercase;
+padding: 15px 0 5px;
+color: #AAA;
+text-transform: uppercase;
 }
-
 dd {
-  padding: 0 0 15px;
-  border-bottom: 1px solid #DDD;
+padding: 0 0 15px;
+border-bottom: 1px solid #DDD;
 }
-
 button {
-  display: block;
-  width: 80%;
-  margin: 50px auto 0;
-  padding: 20px;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: white;
-  border: none;
-  background-color: #3498DB;
-  cursor: pointer;
+display: block;
+width: 80%;
+margin: 50px auto 0;
+padding: 20px;
+font-size: 16px;
+text-transform: uppercase;
+color: white;
+border: none;
+background-color: #3498DB;
+cursor: pointer;
 }
-
 .footer {
-  margin: 20px auto 0;
-  display: flex;
-  width: 80%;
-  justify-content: space-between;
+margin: 20px auto 0;
+display: flex;
+width: 80%;
+justify-content: space-between;
 }
-
 .footer a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #AAA;
+text-transform: uppercase;
+text-decoration: none;
+color: #AAA;
 }
-
 .footer a.sign-in-link {
-  color: #3498DB;
+color: #3498DB;
 }
 
-@import "compass/css3";
 
-// SETTINGS -----------------
 
-$size : 80px;
-$swipe-colour : #000;
-$swipe-arrow-colour : lighten($swipe-colour, 35%);
-$swipe-hand-skew : 5deg;
-$swipe-distance : 0.1em;
-$swipe-animation-name : swipe;
-$swipe-animation-rotate-name : swipe-rotate;
-$swipe-animation-speed : 2700ms;
-$swipe-animation-delay : 250ms;
-$swipe-animation-timing-func : linear;
 
-// GENERAL ------------------
+Message Connor, krazymonkey45
 
-html, body{ 
-  height: 100%;
-  min-height: 100%;
-}
 
-body{
-  height: 100%;
-  font-size: $size;
-  background: #eeeeee;
-  background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
-  background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%);
-  background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%);
-  background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%);
-  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
-}
-
-.stage{
-  width: 100%;
-  padding: 7rem 2rem 2rem;
-  text-align: center;
-}
-
-*,
-*:after,
-*:before{
- @include box-sizing(border-box);
-}
-
-// SWIPE ELEMENT ------------
-
-.swipe{
-  display: inline-block;
-  color: $swipe-colour;
-  
-  @include animation-name( $swipe-animation-name );
-  @include animation-duration( $swipe-animation-speed );
-  @include animation-delay( $swipe-animation-delay );
-  @include animation-timing-function( $swipe-animation-timing-func );
-  @include animation-iteration-count( infinite );
-  
-  .fa-long-arrow-left,
-  .fa-long-arrow-right{
-    font-size: 0.65em;
-    color: $swipe-arrow-colour;
-  }
-  
-  .fa-long-arrow-left{ 
-    @include transform( scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(1.25em) );
-  }
-  .fa-long-arrow-right{
-    @include transform( scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(-0.95em) );
-  }
-  
-  .fa-hand-o-up{
-    @include transform( scaleY(1.2) );
-    @include animation-name( $swipe-animation-rotate-name );
-    @include animation-duration( $swipe-animation-speed );
-    @include animation-delay( $swipe-animation-delay );
-    @include animation-timing-function( $swipe-animation-timing-func );
-    @include animation-iteration-count( infinite );
-  }
-}
-
-// SWIPE ANIMATION ----------
-
-@include keyframes( $swipe-animation-name ){
-    0%{ @include transform( translateX(0) ); }
-    10%{ @include transform( translateX(-($swipe-distance)) ); }
-    20%{ @include transform( translateX($swipe-distance) ); }
-    30%{ @include transform( translateX(-($swipe-distance)) ); }
-    40%{ @include transform( translateX($swipe-distance) ); }
-    50%{ @include transform( translateX(0) ); }
-    100%{ @include transform( translateX(0) ); }
-}
-
-@include keyframes( $swipe-animation-rotate-name ){
-    0%{ @include transform( scaleY(1.2) skew(0) ); }
-    10%{ @include transform( scaleY(1.2) skew($swipe-hand-skew) ); }
-    20%{ @include transform( scaleY(1.2) skew(-$swipe-hand-skew) ); }
-    30%{ @include transform( scaleY(1.2) skew($swipe-hand-skew) ); }
-    40%{ @include transform( scaleY(1.2) skew(-$swipe-hand-skew) ); }
-    50%{ @include transform( scaleY(1.2) skew(0) ); }
-    100%{ @include transform( scaleY(1.2) skew(0) ); }
-}
