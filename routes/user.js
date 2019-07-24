@@ -12,7 +12,11 @@ router.get('/singleProject',userController.singleProject)
 
 router.get('/savedProjects', userController.savedProjects)
 
+router.get('/login', userController.login)
+
 router.get('/signup', userController.signup)
+
+router.post('/signup', userController.postsignup)
 
 router.get('/main', userController.main)
 

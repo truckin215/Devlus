@@ -38,7 +38,7 @@ passport.use('local-signup', new LocalStrategy(
             // add user to my database
             db.user.create({
                 username: username,
-                email: email , 
+                // email: email , 
                 password: password,
                 name: req.body.name
             }).then(function (newUser) {
