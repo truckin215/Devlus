@@ -141,11 +141,6 @@ dl {
   text-align: center;
 }
 
-dt,
-dd {
-  margin: 0;
-}
-
 dt {
   padding: 15px 0 5px;
   color: #AAA;
