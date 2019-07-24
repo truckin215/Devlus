@@ -122,10 +122,12 @@ width: 80%;
 margin: 0 auto;
 text-align: center;
 }
+
 dt,
 dd {
 margin: 0;
 }
+
 dt {
 padding: 15px 0 5px;
 color: #AAA;
@@ -159,12 +161,18 @@ text-decoration: none;
 color: #AAA;
 }
 .footer a.sign-in-link {
-color: #3498DB;
+  color: #3498DB;
+}
+.profile{
+  text-align: center
+}
+img {
+  float: left;
+}
+div.a {
+  text-align: center;
 }
 
-
-
-
-Message Connor, krazymonkey45
-
+color: #3498DB;
+}
 
