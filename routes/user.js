@@ -14,6 +14,8 @@ router.get('/savedProjects', userController.savedProjects)
 
 router.get('/login', userController.login)
 
+router.post('/login', userController.postlogin)
+
 router.get('/signup', userController.signup)
 
 router.post('/signup', userController.postsignup)

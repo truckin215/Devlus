@@ -10,7 +10,7 @@ const bodyParser = require('body-parser').urlencoded({extended: false})
 
 const app = express();
 
-const port = process.env.PORT || 4000 ;
+const port = process.env.PORT || 3000 ;
 
 // adding context to our request
 app.use( (req, res, next ) => {
@@ -21,6 +21,9 @@ app.use( (req, res, next ) => {
 app.set("view engine","ejs");
 
 app.use(express.static('./public'));
+app.use(session({ secret: "I love veros cohort 2", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(bodyParser)
 app.use(routes);
 

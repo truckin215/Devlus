@@ -22,24 +22,19 @@
             margin-right: auto;
             }
             </style>
-           <img class="portrait" src=https://www341.lunapic.com/do-not-link-here-use-hosting-instead/156397930939277837?8793652580">   
+           <img class="portrait" src="/css/156397930939277837.jpeg">   
           </svg>
         </div>
-        <form action="/signup" method="POST" class="signup">
+        <form class="login" action="/login" method="POST">
             <dl>
             <dt>Username</dt>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+                    <input name='username' type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
                     <small id="emailHelp" class="form-text text-muted"></small>
                 </div>
-            <dt>Email</dt>
-            <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                    <small id="emailHelp" class="form-text text-muted"></small>
-            </div>
             <dt>Password</dt>
             <div class="form-group">
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     <small id="emailHelp" class="form-text text-muted"></small>
             </div>
             </dl>
@@ -47,7 +42,7 @@
         </form>
         <div class="footer">
           <a href="#">Terms &amp; Conditions</a>
-          <a href="#" class="sign-up-link">Register</a>
+          <a href="/signup" class="sign-up-link">Sign up</a>
         </div>
       </div>
     <script src="/public/js/main.js"></script>

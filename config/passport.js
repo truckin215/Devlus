@@ -10,7 +10,7 @@ var GitHubStrategy = require('passport-github').Strategy;
 // for signing in
 passport.use(new LocalStrategy(
     function(usernameField, password, done) {
-      db.User.findOne( { where: { usernameField: usernameField } } ).then( function(dbuser){
+      db.user.findOne( { where: { username: usernameField } } ).then( function(dbuser){
         // if there is no user with the provided email
         if (!dbuser) {
             return done(null, false, { message: 'Incorrect username.' } );

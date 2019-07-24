@@ -60,3 +60,9 @@ exports.postsignup = passport.authenticate('local-signup', {
     successRedirect: '/profile',
     failureRedirect: '/signup' 
 });
+
+// POST user/login
+exports.postlogin = passport.authenticate('local', { 
+    successRedirect: '/profile',
+    failureRedirect: '/login' 
+});
