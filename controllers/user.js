@@ -1,6 +1,6 @@
 const passport = require('../config/passport');
 
-// GET home page at /
+// // GET home page at /
 exports.home = (req, res) => {
     req.context.db.Projects.findAll({
         attributes: ['id', 'projectName']
@@ -36,7 +36,7 @@ exports.signup = (req,res) => {
 }
 
 // POST /user/signup
-exports.signup = passport.authenticate('local-signup', {
-    successRedirect: '/profile',
-    failureRedirect: '/signup' 
-});
+// exports.signup = passport.authenticate('local-signup', {
+//     successRedirect: '/profile',
+//     failureRedirect: '/signup' 
+// });

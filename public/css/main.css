@@ -61,3 +61,128 @@ section {
   display: block ;
   width: 30px;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: #89cff0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: white;
+  width: 50%;
+  min-width: 400px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 50px;
+  background-color: #3498DB;
+  background-image: url("https://i.imgur.com/Y4IGM7T.jpg");
+  background-size: cover;
+}
+
+.portrait {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 30px auto 0;
+  border: 4px solid white;
+  border-radius: 54px;
+  z-index: 2;
+}
+
+.slant {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-top: -100px;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+.slant polygon {
+  fill: white;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+dl {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+dt,
+dd {
+  margin: 0;
+}
+
+dt {
+  padding: 15px 0 5px;
+  color: #AAA;
+  text-transform: uppercase;
+}
+
+dd {
+  padding: 0 0 15px;
+  border-bottom: 1px solid #DDD;
+}
+
+button {
+  display: block;
+  width: 80%;
+  margin: 50px auto 0;
+  padding: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  background-color: #3498DB;
+  cursor: pointer;
+}
+
+.footer {
+  margin: 20px auto 0;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #AAA;
+}
+
+.footer a.sign-in-link {
+  color: #3498DB;
+}

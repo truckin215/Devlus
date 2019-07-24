@@ -11,24 +11,40 @@
 <header>
 </header>
 <body>
-    <h1 class="text-center display-1">Signup</h1>
-    <form action="/signup" method="POST" class="signup">
+    <div class="container">
+        <div class="heading">
+          <h1>Sign Up</h1>
+          <img class="portrait" src="https://yt3.ggpht.com/-dhKFOa9qsvU/AAAAAAAAAAI/AAAAAAAAAAA/n2GHiMHW20k/s900-c-k-no/photo.jpg">
+          <svg class="slant" preserveAspectRatio="none">
+            <polygon points="0,1 1,1 1,0">
+          </svg>
+        </div>
+        <form action="">
+            <dl>
+            <dt>UserName</dt>
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="UserName">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+            <dt>Email</dt>
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input name="email" type="email" class="form-control" id="email-input" placeholder="Email">
-                <small id="emailHelp" class="form-text text-muted"></small>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                    <small id="emailHelp" class="form-text text-muted"></small>
             </div>
+            <dt>Password</dt>
             <div class="form-group">
-                    <label>Username</label>
-                    <input type="username" class="form-control" id="exampleInputUsername" placeholder="Username">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <small id="emailHelp" class="form-text text-muted"></small>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" name="password" class="form-control" id="password-input" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        
-    </form>
+            </dl>
+            <button type="submit">Done</button>
+        </form>
+        <div class="footer">
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#" class="sign-in-link">Sign In</a>
+        </div>
+      </div>
     <script src="/public/js/main.js"></script>
 </body>
 </html>
