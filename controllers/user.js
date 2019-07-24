@@ -40,8 +40,18 @@ exports.main = (req,res) => {
     res.render('main')
 }
 
+
+
+// Git Oauth
+exports.gitlogin = passport.authenticate('github')
+
+exports.gitlogin = passport.authenticate('github', { failureRedirect: '/user/login',
+successRedirect: '/profile',} );
+
+
+
 // POST /signup
-// exports.signup = p   assport.authenticate('local-signup', {
+// exports.signup = passport.authenticate('local-signup', {
 //     successRedirect: '/profile',
 //     failureRedirect: '/signup' 
 // });

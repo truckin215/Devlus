@@ -16,5 +16,7 @@ router.get('/signup', userController.signup)
 
 router.get('/main', userController.main)
 
+router.get('/auth/github', userController.gitlogin)
+
 module.exports = router;
 
