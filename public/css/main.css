@@ -172,3 +172,8 @@ img {
 div.a {
   text-align: center;
 }
+.desc{
+  float: right;
+  text-align: right;
+}
+
