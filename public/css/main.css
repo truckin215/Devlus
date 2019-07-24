@@ -189,3 +189,10 @@ button {
 .profile{
   text-align: center
 }
+img {
+  float: left;
+}
+div.a {
+  text-align: center;
+}
+
