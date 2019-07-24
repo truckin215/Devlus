@@ -26,8 +26,7 @@ passport.use(new LocalStrategy(
 
 // for when a user signs up
 passport.use('local-signup', new LocalStrategy(
-    {  usernameField: 'email',
-       passReqToCallback: true }, // allow us to use the entire request coming from our app},
+    {  passReqToCallback: true }, // allow us to use the entire request coming from our app},
     function(req, username, password, done) {
       db.User.findOne( { where: { username: username } } ).then( function(dbuser){
         // to verify that the email is not in use
