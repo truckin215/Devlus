@@ -83,6 +83,19 @@ padding-bottom: 150px;
 position: relative;
 box-sizing: border-box;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: white;
+  width: 50%;
+  min-width: 400px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  position: relative;
+  box-sizing: border-box;
+  }
 .heading {
 position: relative;
 display: flex;
@@ -184,3 +197,16 @@ div.a {
 #saveprojects{
   text-align: center
 }
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: white;
+  width: 70%;
+  min-width: 400px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  position: relative;
+  box-sizing: border-box;
+  }
