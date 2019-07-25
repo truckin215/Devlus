@@ -15,12 +15,11 @@
        <div class="heading">
          <h1>Sign Up</h1>
          <img class="portrait" src="/css/156397930939277837.jpeg">
-         <svg class="slant" preserveAspectRatio="none">
-         </svg>
+         <svg class="slant" preserveAspectRatio="none"></svg>
        </div>
        <form action="/signup" method="POST" class="signup">
            <dl>
-           <dt>UserName</dt>
+           <dt id="Upperpad">UserName</dt>
                <div class="form-group">
                    <input name="username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
                    <small id="emailHelp" class="form-text text-muted"></small>
@@ -38,9 +37,9 @@
            </dl>
            <button type="submit" value="Log In" >Sign Up</button>
        </form>
-       <a id="github-button" class="btn btn-block btn-social btn-github">
-           <i class="fa fa-github"></i> Sign in with Github
-         </a>
+       <div id="github-button" class="btn btn-block btn-social btn-github">
+            <a href="/auth/github">Sign in with Github</a>
+       </div>
        <div class="footer">
          <a href="#">Terms &amp; Conditions</a>
          <a href="/login" class="Log-in-link">Log In</a>

@@ -20,7 +20,8 @@ exports.addproject = (req,res) => {
 }
 // GET profile page at /profile
 exports.profile = (req,res) => {
-    res.render('profile')
+    console.log(req.user)
+    res.render('profile', {currentUser: req.user})
 }
 // GET input page at /singleProject
 exports.singleProject = (req,res) => {
@@ -48,9 +49,9 @@ exports.main = (req,res) => {
 
 
 // Git Oauth
-exports.gitlogin = passport.authenticate('github')
+exports.gitlogin = passport.authenticate('github');
 
-exports.gitlogin = passport.authenticate('github', { failureRedirect: '/user/login',
+exports.gitCallback = passport.authenticate('github', { failureRedirect: '/login',
 successRedirect: '/profile',} );
 
 
@@ -59,4 +60,10 @@ successRedirect: '/profile',} );
 exports.postsignup = passport.authenticate('local-signup', {
     successRedirect: '/profile',
     failureRedirect: '/signup' 
+});
+
+// POST user/login
+exports.postlogin = passport.authenticate('local', { 
+    successRedirect: '/profile',
+    failureRedirect: '/login' 
 });

@@ -10,7 +10,7 @@ var GitHubStrategy = require('passport-github').Strategy;
 // for signing in
 passport.use(new LocalStrategy(
     function(usernameField, password, done) {
-      db.User.findOne( { where: { usernameField: usernameField } } ).then( function(dbuser){
+      db.user.findOne( { where: { username: usernameField } } ).then( function(dbuser){
         // if there is no user with the provided email
         if (!dbuser) {
             return done(null, false, { message: 'Incorrect username.' } );
@@ -38,7 +38,7 @@ passport.use('local-signup', new LocalStrategy(
             // add user to my database
             db.user.create({
                 username: username,
-                // email: email , 
+                email: req.body.email , 
                 password: password,
                 name: req.body.name
             }).then(function (newUser) {
@@ -61,12 +61,15 @@ passport.use('local-signup', new LocalStrategy(
 passport.use(new GitHubStrategy({
     clientID: '29528129ad5c7e6e8023',
     clientSecret: '0f8e2ca5262c2632c05f3dd73f70c64345d75062',
-    callbackURL: "http://127.0.0.1:3000/auth/github/callback"
+    callbackURL: "/github/callback"
   },
   function(accessToken, refreshToken, profile, cb) {
-    User.findOrCreate({ githubId: profile.id }, function (err, user) {
-      return cb(err, user);
-    });
+    // to add user to your database
+    // User.findOrCreate({ githubId: profile.id }, function (err, user) {
+      
+    // });
+
+    return cb(null, profile);
   }
 ));
 
