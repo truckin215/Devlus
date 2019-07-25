@@ -6,7 +6,7 @@ const userController = require('../controllers/user')
 
 router.get('/addproject', userController.addproject)
 
-router.post('/addporject',userController.postProject)
+router.post('/addproject',userController.postProject)
 
 router.get('/profile', userController.profile)
 
