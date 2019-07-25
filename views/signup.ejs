@@ -7,10 +7,36 @@
    <title>Devlus | Signup</title>
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link rel="stylesheet" href="/css/main.css">
+   <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/js/navigation.js">
 </head>
 <header>
 </header>
 <body>
+    <div class="container3">
+        <nav>
+            <ul id="links">
+                <li onclick="red(1, linkCount[0])">
+                    <a href="/main">Home</a>
+                </li>
+                <li onclick="red(2, linkCount[1])">
+                    <a href="/profile">Profile</a>
+                </li>
+                <li onclick="red(3, linkCount[2])">
+                    <a href="/singleProject">Projects</a>
+                </li>
+                <li onclick="red(4, linkCount[3])">
+                    <a href="/addproject">Add Project</a>
+                </li>
+                <li onclick="red(5, linkCount[4])">
+                    <a href="/login">Login</a>
+                </li>
+            </ul>
+            <div class="progressBar">
+                <div id="progress"></div>
+            </div>
+        </nav>
+    </div>
    <div class="container">
        <div class="heading">
          <h1>Sign Up</h1>

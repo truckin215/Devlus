@@ -210,3 +210,6 @@ div.a {
   position: relative;
   box-sizing: border-box;
   }
+.desc{
+  display: inline;
+}
