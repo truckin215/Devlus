@@ -22,7 +22,7 @@ module.exports = function(sequelize, DataTypes){
             type:DataTypes.STRING
         },
         payment: {
-            type:DataTypes.INTEGER
+            type:DataTypes.BOOLEAN
         },
         length: {
             type:DataTypes.STRING,

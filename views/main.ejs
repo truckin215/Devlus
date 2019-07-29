@@ -11,6 +11,7 @@
    <link rel="stylesheet" href="/js/navigation.js">
 </head>
 <body>
+<<<<<<< HEAD
    <div class="container3">
        <nav>
            <ul id="links">
@@ -69,5 +70,24 @@
        <!-- <div id="saved projects">
        </div> -->
    </div>
+=======
+    
+  <div class="container">
+        <!-- Content here -->
+        <div id="Display mx-auto text-center">
+          <img src="/logo.jpeg" alt="">
+        </div>
+        <% for ( let i=0; i < projects.length;  i++ ) { %>
+            <div class="row">
+              <div id="text1">
+               <div class="col">
+                 <img id="<%= projects[i].id%>" src="<%= projects[i].image %>" alt="">
+                 <%= projects[i].projectName%>
+                </div>
+              </div>
+            </div>
+        <% } %>
+  </div>
+>>>>>>> d86a2c70ad11d6e336086e4df1ec4014f766dce9
 </body>
 </html>

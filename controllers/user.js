@@ -61,7 +61,8 @@ exports.main = (req,res) => {
     req.context.db.Projects.findAll({
         attributes: ['id', 'projectName', 'image', 'location', 'description']
     }).then(function(results){
-        res.render('main', {profile: results})}
+        console.log(results.dataValues)
+        res.render('main', {projects: results})}   
     )
 }
 ;
