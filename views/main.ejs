@@ -39,5 +39,9 @@
             </div>
           </div>
       </div>
+       <% for ( let i=0; i < projects.length;  i++ ){%>
+        <img id="<%= projects[i].id%>" src="<%= projects[i].image %>" alt="">
+        <% } %>
+
 </body>
 </html>
