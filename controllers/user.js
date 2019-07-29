@@ -1,18 +1,21 @@
+const express = require('express');
 const passport = require('../config/passport');
+const db = require('../models');
+const app = express();
 
-// // GET home page at /
-exports.home = (req, res) => {
-    req.context.db.Projects.findAll({
-        attributes: ['id', 'projectName']
-    }).then(function(results){
-        console.log(results)
-        // rendering tasks view and passing taskToDo data
-        res.render('home', {project: results});
-    }).catch(function(err){
-        console.log(err);
-        res.json(err);
-    });
-}
+// // GET home page at /main
+// exports.main = (req, res) => {
+//     req.context.db.Projects.findAll({
+//         attributes: ['id', 'projectName']
+//     }).then(function(results){
+//         console.log(results)
+//         // rendering tasks view and passing taskToDo data
+//         res.render('home', {project: results});
+//     }).catch(function(err){
+//         console.log(err);
+//         res.json(err);
+//     });
+// }
 
 // get description page at /addproject
 exports.addproject = (req,res) => {
@@ -67,3 +70,21 @@ exports.postlogin = passport.authenticate('local', {
     successRedirect: '/profile',
     failureRedirect: '/login' 
 });
+
+// POST postProject
+exports.postProject = (req, res) => {
+    console.log("here")
+    console.log(req.user)
+    req.context.db.Projects.create({
+        UserID:  req.user.id,
+        projectName: req.body.projectName ,
+        description: req.body.description ,
+        location: req.body.location,
+
+    }).then(function(){
+        res.redirect('/main');
+    }).catch(function(err){
+        console.log(err);
+        res.json(err);
+    });
+}
