@@ -90,11 +90,14 @@ exports.postlogin = passport.authenticate('local', {
 // POST postProject
 exports.postProject = (req, res) => {
     console.log("here")
+    console.log(req.body.image)
     req.context.db.Projects.create({
         UserID:  req.user.id,
         projectName: req.body.projectName ,
         description: req.body.description ,
-        location: req.body.location
+        location: req.body.location,
+        devCount: req.body.devCount,
+        image: req.body.image
 
     }).then(function(){
         res.redirect('/main');
