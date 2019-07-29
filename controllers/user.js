@@ -28,11 +28,23 @@ exports.profile = (req,res) => {
 }
 // GET input page at /singleProject
 exports.singleProject = (req,res) => {
-    res.render('singleProject')
+    exports.main = (req,res) => {
+        req.context.db.Projects.findAll({
+            attributes: ['id', 'projectName', 'image', 'location', 'description']
+        }).then(function(results){
+            res.render('singleProject', {projects: results})}
+        )
+    }
 }
 // GET savedProjects page at /savedProjects
 exports.savedProjects = (req,res) => {
-    res.render('savedProjects')
+    exports.main = (req,res) => {
+        req.context.db.userfavorites.findAll({
+            attributes: ['id', 'projectName', 'image', 'location', 'description']
+        }).then(function(results){
+            res.render('savedProjects', {favorites: results})}
+        )
+    }
 }
 // GET . signin
 exports.login = (req,res) => {
@@ -46,10 +58,10 @@ exports.signup = (req,res) => {
 
 // GET /main
 exports.main = (req,res) => {
-    req.context.db.Task.findAll({
+    req.context.db.Projects.findAll({
         attributes: ['id', 'projectName', 'image', 'location', 'description']
     }).then(function(results){
-        res.render('main', {profile: db.Projects})}
+        res.render('main', {profile: results})}
     )
 }
 

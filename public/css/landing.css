@@ -1,6 +1,36 @@
+body {
+    background-color: #b1e0e6;
+  }
+  
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     }
-    
+    #Display {
+        margin-left: 370px;
+    }
+    #text1 {
+        margin-right: 135px;
+        background: white;
+    }
+    #text2 {
+        margin-right: 135px;
+        background: white;
+    }
+    #text3 {
+        background: white;
+    }
+
+#images1 {
+    margin-left: 0px;
+    background: white;
+}
+#images2 {
+    margin-left: 134px;
+    background: white;
+}
+#images3 {
+    margin-left: 134px;
+    background: white;
+}
