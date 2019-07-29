@@ -29,4 +29,3 @@ router.get('/auth/github', userController.gitlogin)
 router.get('/github/callback', userController.gitCallback)
 
 module.exports = router;
-
