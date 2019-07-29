@@ -1,8 +1,13 @@
+#Upperpad {
+  padding-top: 0% 
+}
+
+#Lowerpad {
+  padding-bottom: 0%;
+}
+
 body {
   background-color: #b1e0e6;
-}
-input {
-  width: 100%;
 }
 h5{
 padding-top: 20px;
@@ -20,34 +25,6 @@ display: inline-block;
 .notshowing {
 display: inline-block;
 cursor: pointer;
-}
-.bar1{
-width: 35px;
-height: 5px;
-background-color: #333;
-margin: 25px 0 6px 0;
-transition: 0.4s;
-}
-.bar2, .bar3 {
-width: 35px;
-height: 5px;
-background-color: #333;
-margin: 6px 0;
-transition: 0.4s;
-}
-/* Rotate first bar */
-.change .bar1 {
--webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-/* Fade out the second bar */
-.change .bar2 {
-opacity: 0;
-}
-/* Rotate last bar */
-.change .bar3 {
--webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-transform: rotate(45deg) translate(-8px, -8px) ;
 }
 section {
 display: block ;
@@ -115,6 +92,14 @@ border: 4px solid white;
 border-radius: 54px;
 z-index: 2;
 }
+.portrait2 {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  border-radius: 100px;
+  z-index: 2;
+  }
 .slant {
 position: absolute;
 left: 0;
@@ -188,6 +173,11 @@ div.a {
 .desc{
   float: right;
   text-align: right;
+}
+#addprojectbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
 }
 
 .profile21 h1{
