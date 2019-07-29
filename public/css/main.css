@@ -206,6 +206,42 @@ div.a {
 
 #Placeholder-project {
   margin-left: 750px;
+} 
+
+/* social media login */
+.social-login {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
 }
+.social-login a {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+.social-login .github {
+  background-color: #444;
+}
+
+.social-login .github:hover {
+  background-color: #2b2b2b;
+}
+
+
+.social-login a i {
+  font-size: 21px;
+  color: white;
+}
+
+.moreops {
+  text-align: center;
+  padding-top: 15px;
+}
+
+
 
 

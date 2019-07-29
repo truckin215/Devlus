@@ -10,10 +10,35 @@
     <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/js/navigation.js">
 </head>
-<body id="Body-singleProject">
-    <img src="/css/156397930939277837.jpeg" alt="Devlus" height="75" width="75">
-    <h1><b>"Name of the Project"</b></h1>
-    <h1>Project Image</h1>
-    <div id="Placeholder-project"><img src="https://via.placeholder.com/500x500" alt="Placeholder"></a></div>
+<div class="container3">
+        <nav class="mb-5" style="background-color: #f0f0f0;">
+            <ul id="links">
+                <li>
+                    <a href="/main">Home</a>
+                </li>
+                <li>
+                    <a href="/profile">Profile</a>
+                </li>
+                <li>
+                    <a href="/addproject">Add Project</a>
+                </li>
+                <li>
+                    <a href="#">about</a>
+                </li>
+                <li>
+                    <a href="/login">Login</a>
+                </li>
+            </ul>
+        </nav>
+</div>
+<body class=" "> 
+        <div class="container mx-auto text-center">
+                <img src="/css/156397930939277837.jpeg" alt="Devlus" height="75" width="75">
+                <img src="<%= project.image %>" class="img-thumbnail" alt="Placeholder"></a>
+                <h1 class="display-1 mt-5 text-primary"><%= project.projectName %></h1>
+                <p class="lead mt-5"><%= project.description %></p>
+
+                <button type="button" class="btn btn-primary btn-lg">Join <%= project.projectName %></button>
+        </div>
 </body>
 </html>

@@ -9,34 +9,30 @@
    <link rel="stylesheet" href="/css/main.css">
    <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/js/navigation.js">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
-<header>
-</header>
-<body>
-    <div class="container3">
-        <nav>
+<div class="container3">
+        <nav class="mb-5" style="background-color: #f0f0f0;">
             <ul id="links">
-                <li onclick="red(1, linkCount[0])">
+                <li>
                     <a href="/main">Home</a>
                 </li>
-                <li onclick="red(2, linkCount[1])">
+                <li>
                     <a href="/profile">Profile</a>
-                </li> 
-                <li onclick="red(3, linkCount[2])">
-                    <a href="/singleProject">Projects</a>
                 </li>
-                <li onclick="red(4, linkCount[3])">
+                <li >
                     <a href="/addproject">Add Project</a>
                 </li>
-                <li onclick="red(5, linkCount[4])">
-                    <a href="/login">Login</a>
+                <li>
+                    <a href="#">about</a>
+                </li>
+                <li class="active">
+                    <a href="/login">Signup</a>
                 </li>
             </ul>
-            <div class="progressBar">
-                <div id="progress"></div>
-            </div>
         </nav>
     </div>
+<body>
    <div class="container">
        <div class="heading">
          <h1>Sign Up</h1>
@@ -63,8 +59,12 @@
            </dl>
            <button type="submit" value="Log In" >Sign Up</button>
        </form>
-       <div id="github-button" class="btn btn-block btn-social btn-github">
-            <a href="/auth/github">Log in with Github</a>
+       <div class="moreops">or Signup with</div>
+       <div class="social-login">
+           <a href="/auth/github" class="github">
+            <i class="fa fa-github"></i>
+           </a>
+         <br>
        </div>
        <div class="footer">
          <a href="#">Terms &amp; Conditions</a>

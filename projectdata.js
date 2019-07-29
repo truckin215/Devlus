@@ -1,4 +1,4 @@
-cosnt db = require("./models");
+const db = require("./models");
 
 db.Projects.create({
     UserID: 1 ,
@@ -7,8 +7,8 @@ db.Projects.create({
     devCount: 10,
     location: "miami",
     payment: true,
-    length:,
+    length:"3 month",
     image:"http://codeskools.com/wp-content/uploads/2019/03/logo.png",
     startdate: "December",
     close: false
-})
+});
