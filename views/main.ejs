@@ -10,38 +10,21 @@
 </head>
 <body>
     
-    <div class="container">
+  <div class="container">
         <!-- Content here -->
-        <div id="Display">
-        <h1 class="display-1">Display 1</h1>
+        <div id="Display mx-auto text-center">
+          <img src="/logo.jpeg" alt="">
         </div>
+        <% for ( let i=0; i < projects.length;  i++ ) { %>
             <div class="row">
               <div id="text1">
-              <a href="/singleProject"><h2><div class="col">Example Project 1</div></h2></a>
+               <div class="col">
+                 <img id="<%= projects[i].id%>" src="<%= projects[i].image %>" alt="">
+                 <%= projects[i].projectName%>
+                </div>
               </div>
-              <div id="text2">
-              <a href="/singleProject"><h2><div class="col">Example Project 2</div></h2></a>
-              </div>
-              <div id="text3">
-              <a href="/singleProject"><h2><div class="col">Example Project 3</div></h2></a>
-              </div>
-
-              <div class="w-100"></div>
-              <div id="images1">
-              <div class="col"><img src="https://via.placeholder.com/260" alt="This is a placeholder"></a></div>
-              </div>
-              <div id="images2">
-              <div class="col"><img src="https://via.placeholder.com/260" alt="This is a placeholder"></a></div>
-              </div>
-              <div id="images3">
-              <div class="col"><img src="https://via.placeholder.com/260" alt="This is a placeholder"></a></div>
             </div>
-            </div>
-          </div>
-      </div>
-       <% for ( let i=0; i < projects.length;  i++ ){%>
-        <img id="<%= projects[i].id%>" src="<%= projects[i].image %>" alt="">
         <% } %>
-
+  </div>
 </body>
 </html>
