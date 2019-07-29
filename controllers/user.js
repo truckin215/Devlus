@@ -64,7 +64,7 @@ exports.main = (req,res) => {
         res.render('main', {profile: results})}
     )
 }
-
+;
 
 
 // Git Oauth
@@ -90,14 +90,11 @@ exports.postlogin = passport.authenticate('local', {
 // POST postProject
 exports.postProject = (req, res) => {
     console.log("here")
-    console.log(req.body.image)
     req.context.db.Projects.create({
         UserID:  req.user.id,
         projectName: req.body.projectName ,
         description: req.body.description ,
-        location: req.body.location,
-        devCount: req.body.devCount,
-        image: req.body.image
+        location: req.body.location
 
     }).then(function(){
         res.redirect('/main');

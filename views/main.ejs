@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Devlus | Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/landing.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Devlus | Signup</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="/css/main.css">
+   <link rel="stylesheet" href="/css/navigation.css">
+   <link rel="stylesheet" href="/js/navigation.js">
 </head>
 <body>
-    
-    <div class="container">
-        <!-- Content here -->
-        <div id="Display">
-        <h1 class="display-1">Display 1</h1>
-        </div>
-            <div class="row">
-              <div id="text1">
-              <a href="/singleProject"><h2><div class="col">Example Project 1</div></h2></a>
-              </div>
-              <div id="text2">
-              <a href="/singleProject"><h2><div class="col">Example Project 2</div></h2></a>
-              </div>
-              <div id="text3">
-              <a href="/singleProject"><h2><div class="col">Example Project 3</div></h2></a>
-              </div>
-
-              <div class="w-100"></div>
-              <div id="images1">
-              <div class="col"><img src="https://via.placeholder.com/260" alt="This is a placeholder"></a></div>
-              </div>
-              <div id="images2">
-              <div class="col"><img src="https://via.placeholder.com/260" alt="This is a placeholder"></a></div>
-              </div>
-              <div id="images3">
-              <div class="col"><img src="https://via.placeholder.com/260" alt="This is a placeholder"></a></div>
-            </div>
-            </div>
-          </div>
-      </div>
+   <div class="container3">
+       <nav>
+           <ul id="links">
+               <li onclick="red(1, linkCount[0])">
+                   <a href="/main">Home</a>
+               </li>
+               <li class="active">
+                   <a href="/profile">Profile</a>
+               </li>
+               <li onclick="red(3, linkCount[2])">
+                   <a href="/singleProject">Projects</a>
+               </li>
+               <li onclick="red(4, linkCount[3])">
+                   <a href="/addproject">Add Project</a>
+               </li>
+               <li onclick="red(5, linkCount[4])">
+                   <a href="/login">Login</a>
+               </li>
+           </ul>
+           <div class="progressBar">
+               <div id="progress"></div>
+           </div>
+       </nav>
+   </div>
+   <div class="container2">
+       <!-- <a href="https://placeholder.com"></a> -->
+       <div class="row">
+         <div class="col">
+           <img src="<%= currentUser.photos[0].value %>" alt="Placeholder" height="mx-auto" width="mx-auto">
+         </div>
+         <div class="col">
+           <p><%= currentUser.username %></p>
+           <p><%= currentUser.displayName %></p>
+           <p><%= currentUser._json.location%></p>
+           <p><%= currentUser.profileUrl%></p>
+         </div>
+       </div>
+       <div class="desc">
+       </div>
+       <div class="profile21">
+           <h1>Previous Projects</h1>
+       </div>
+       <div class="ProjectSaved">
+           <div class="row">
+             <div class="col-sm">
+               <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" class="rounded mx-auto d-block" alt="Placeholder"></a>
+             </div>
+             <div class="col-sm">
+               <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" class="rounded mx-auto d-block" alt="Placeholder"></a>
+             </div>
+             <div class="col-sm">
+               <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" class="rounded mx-auto d-block" alt="Placeholder"></a>
+             </div>
+           </div>
+         </div>
+       <!-- <div id="saved projects">
+       </div> -->
+   </div>
 </body>
 </html>

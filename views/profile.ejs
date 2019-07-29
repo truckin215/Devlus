@@ -1,73 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Devlus | Signup</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <link rel="stylesheet" href="/css/main.css">
-   <link rel="stylesheet" href="/css/navigation.css">
-   <link rel="stylesheet" href="/js/navigation.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Devlus | Signup</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
+<body style="background-color: powderblue">
+   <img src="https://via.placeholder.com/150x150" alt="placeholder"></a>
+    <p>Username</p>
+    <p>Real Name</p>
+    <p>Location</p>
+    <p>Linked Accounts</p>
+    <br>
+    <br>
+    
+    <div class="a">
+        <h1>Previous Projects</h1>
+        <img src="https://via.placeholder.com/100x100" alt="Placeholder"></a>
+    </div>
+        <!-- Password string 
+        Dateofbirth int
+        Firstname string
+        Lastname string
+        Location string
+        Age int
+        github string
+        Avatar string   
+        Role int -->
+<!-- <div class="profile">
+        <div class="form-group">
+            <label for="Username-info"><b>Username:</b></label>
+            <a href="https://placeholder.com"> <img src="https://via.placeholder.com/80x80" alt="placeholder">
+
+        <div class="form-group">
+            <label for="DOB-info"><b>DOB:</b></label>
+            <a href="https://placeholder.com"> <img src="https://via.placeholder.com/80x80" alt="">  
+
+        <div class="form-group">
+            <label for="Zip-info"><b>Zip Code:</b></label>
+            <a href="https://placeholder.com"> <img src="https://via.placeholder.com/80x80" alt=""> 
+
+        <div class="form-group">
+            <label for="Age-info"><b>Age:</b></label>
+            <a href="https://placeholder.com"> <img src="https://via.placeholder.com/80x80" alt="">      
+
+        <div class="form-group">
+            <label for="Github-info"><b>Github Username:</b></label>
+            <a href="https://placeholder.com"> <img src="https://via.placeholder.com/80x80" alt=""> 
+                
+        <div class="form-group">
+            <label for="Avatar-info"><b>Avatar:</b></label>
+            <a href="https://placeholder.com"> <img src="https://via.placeholder.com/80x80" alt="">   
+
+                Linked account
+        <div class="form-group">
+            <label for="Role-info"><b>Role:</b></label>
+            <a href="https://placeholder.com"> <img src="https://via.placeholder.com/80x80" alt="">  -->
 <body>
-   <div class="container3">
-       <nav>
-           <ul id="links">
-               <li onclick="red(1, linkCount[0])">
-                   <a href="/main">Home</a>
-               </li>
-               <li class="active">
-                   <a href="/profile">Profile</a>
-               </li>
-               <li onclick="red(3, linkCount[2])">
-                   <a href="/singleProject">Projects</a>
-               </li>
-               <li onclick="red(4, linkCount[3])">
-                   <a href="/addproject">Add Project</a>
-               </li>
-               <li onclick="red(5, linkCount[4])">
-                   <a href="/login">Login</a>
-               </li>
-           </ul>
-           <div class="progressBar">
-               <div id="progress"></div>
-           </div>
-       </nav>
-   </div>
-   <div class="container2">
-       <!-- <a href="https://placeholder.com"></a> -->
-       <div class="row">
-         <div class="col">
-           <img src="<%= currentUser.photos[0].value %>" alt="Placeholder" height="mx-auto" width="mx-auto">
-         </div>
-         <div class="col">
-           <p><%= currentUser.username %></p>
-           <p><%= currentUser.displayName %></p>
-           <p><%= currentUser._json.location%></p>
-           <p><%= currentUser.profileUrl%></p>
-         </div>
-       </div>
-       <div class="desc">
-       </div>
-       <div class="profile21">
-           <h1>Previous Projects</h1>
-       </div>
-       <div class="ProjectSaved">
-           <div class="row">
-             <div class="col-sm">
-               <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" class="rounded mx-auto d-block" alt="Placeholder"></a>
-             </div>
-             <div class="col-sm">
-               <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" class="rounded mx-auto d-block" alt="Placeholder"></a>
-             </div>
-             <div class="col-sm">
-               <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" class="rounded mx-auto d-block" alt="Placeholder"></a>
-             </div>
-           </div>
-         </div>
-       <!-- <div id="saved projects">
-       </div> -->
-   </div>
+    <div class="container">
+        <a href="https://placeholder.com"><img src="%= currentUser.photos[0].value %>" alt="Placeholder"></a>
+        <div class="desc">
+            <p>%= currentUser.username %></p>
+            <p>%= currentUser.displayName %></p>
+            <p>%= currentUser._json.location%></p>
+            <p>%= currentUser.profileUrl%></p>
+            <h1>Saved Projects</h1>
+        </div>
+        <a href="https://placeholder.com"></a><img src="https://via.placeholder.com/150" alt="Placeholder"></a>
+        <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" alt="Placeholder"></a>
+        <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" alt="Placeholder"></a>
+        <img src="https://via.placeholder.com/150" alt="Placeholder"></a>
+        <img src="https://via.placeholder.com/150" alt="Placeholder"></a>
+        <img src="https://via.placeholder.com/150" alt="Placeholder"></a>
+    </div>
+     </div>
 </body>
 </html>
