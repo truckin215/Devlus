@@ -1,0 +1,80 @@
+[33mcommit 88991a3fb2b6b68636269023d7098e74882f9027[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Isaiah <isaiah.adams7895@gmail.com>
+Date:   Thu Jul 25 06:22:19 2019 -0400
+
+    fixed nav bar
+
+[33mcommit 3ab93c892abda086e5b864a34f67bb09fff90249[m
+Author: Isaiah <isaiah.adams7895@gmail.com>
+Date:   Thu Jul 25 06:10:03 2019 -0400
+
+    basically finished with profile and finished nav bar
+
+[33mcommit 1c0d5d13c54225facc8e551b0045b5ed14bdd456[m
+Author: Isaiah <isaiah.adams7895@gmail.com>
+Date:   Thu Jul 25 03:09:36 2019 -0400
+
+     working on profile
+
+[33mcommit 773abb20c6e2a2fa01b1f8af0756dc49a695bf4e[m
+Author: Isaiah <isaiah.adams7895@gmail.com>
+Date:   Thu Jul 25 02:39:16 2019 -0400
+
+    made saved projects into a column
+
+[33mcommit 817d5350a892e29311fca298350c2a23c441c97f[m
+Author: Isaiah <isaiah.adams7895@gmail.com>
+Date:   Thu Jul 25 02:08:57 2019 -0400
+
+    added color to saved projects
+
+[33mcommit 14d5fd2d7d0ec84d30dc692a3d228aeb95b963a3[m
+Merge: 1e56929 659cba5
+Author: Isaiah <isaiah.adams7895@gmail.com>
+Date:   Thu Jul 25 02:02:21 2019 -0400
+
+    Merge branch 'master' of https://github.com/truckin215/Devlus
+
+[33mcommit 659cba5be8c4f49cbbad8edef33d3a3798f397d6[m
+Author: Connor_Murray <connormurray215@gmail.com>
+Date:   Thu Jul 25 10:01:18 2019 -0400
+
+    Added location and profile url
+
+[33mcommit bf020dff8f3141cba627ff7243175c5345ccd4e6[m
+Author: Connor_Murray <connormurray215@gmail.com>
+Date:   Thu Jul 25 09:51:43 2019 -0400
+
+    Git hub login working
+
+[33mcommit 1e56929c8d37392856915ce9a5784d8d5283466c[m
+Author: Isaiah <isaiah.adams7895@gmail.com>
+Date:   Thu Jul 25 02:02:16 2019 -0400
+
+    commit before pull
+
+[33mcommit d318eff9ce3514143632acc3cee82467ba47eae3[m
+Merge: 37b8658 bf020df
+Author: Isaiah <isaiah.adams7895@gmail.com>
+Date:   Thu Jul 25 01:55:20 2019 -0400
+
+    asdf
+
+[33mcommit 37b8658184537b3cf8ff98cb334b1a3579756662[m
+Author: Isaiah <isaiah.adams7895@gmail.com>
+Date:   Thu Jul 25 01:52:52 2019 -0400
+
+    asdfasd
+
+[33mcommit ac35eba704af1fac4d1e7480913f8b5ec877cc58[m
+Merge: 939f380 1719e0c
+Author: Isaiah <isaiah.adams7895@gmail.com>
+Date:   Thu Jul 25 01:52:04 2019 -0400
+
+    Merge branch 'master' of https://github.com/truckin215/Devlus
+
+[33mcommit 939f380070b2c5031be8f5558e1c6570ca8577e4[m
+Author: Isaiah <isaiah.adams7895@gmail.com>
+Date:   Thu Jul 25 01:51:32 2019 -0400
+
+    commit before pull
