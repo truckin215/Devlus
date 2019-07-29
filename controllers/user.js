@@ -44,9 +44,13 @@ exports.signup = (req,res) => {
     res.render('signup')
 }
 
-// GET /
+// GET /main
 exports.main = (req,res) => {
-    res.render('main')
+    req.context.db.Task.findAll({
+        attributes: ['id', 'projectName', 'image', 'location', 'description']
+    }).then(function(results){
+        res.render('main', {profile: db.Projects})}
+    )
 }
 
 
@@ -74,12 +78,11 @@ exports.postlogin = passport.authenticate('local', {
 // POST postProject
 exports.postProject = (req, res) => {
     console.log("here")
-    console.log(req.user)
     req.context.db.Projects.create({
         UserID:  req.user.id,
         projectName: req.body.projectName ,
         description: req.body.description ,
-        location: req.body.location,
+        location: req.body.location
 
     }).then(function(){
         res.redirect('/main');
