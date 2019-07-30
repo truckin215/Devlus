@@ -100,6 +100,14 @@ z-index: 2;
   border-radius: 100px;
   z-index: 2;
   }
+  .portrait3 {
+    /* position: relative; */
+    height: 150px;
+    width: 150px;
+    margin: 10px 0;
+    border-radius: 100px;
+    z-index: 2;
+    }
 .slant {
 position: absolute;
 left: 0;
@@ -242,6 +250,11 @@ div.a {
   padding-top: 15px;
 }
 
-
+.img-thubnail2 {
+  max-width:1000px;
+  max-height:1000px;
+  width:auto;
+  height:auto;
+}
 
 

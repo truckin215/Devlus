@@ -34,3 +34,9 @@ img {
     margin-left: 134px;
     background: white;
 }
+.main-logo {
+    max-height: 200px;
+    max-width: 200px;
+    width: auto;
+    height: auto;
+  }
