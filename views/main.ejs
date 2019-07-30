@@ -10,20 +10,45 @@
    <link rel="stylesheet" href="/css/navigation.css">
    <link rel="stylesheet" href="/js/navigation.js">
 </head>
+<div class="container3">
+    <nav class="mb-5" style="background-color: #f0f0f0;">
+        <ul id="links">
+            <li class="active">
+                <a href="/main">Home</a>
+            </li>
+            <li>
+                <a href="/profile">Profile</a>
+            </li>
+            <li>
+                <a href="/addproject">Add Project</a>
+            </li>
+            <li>
+                <a href="#">about</a>
+            </li>
+            <li>
+                <a href="/login">Login</a>
+            </li>
+        </ul>
+    </nav>
+</div>
 <body>
-    
+
   <div class="container">
         <!-- Content here -->
-        <div id="Display mx-auto text-center">
+        <div id="Display mx-auto text-center mb-5">
           <img src="/logo.jpeg" alt="">
         </div>
         <% for ( let i=0; i < projects.length;  i++ ) { %>
             <div class="row">
               <div id="text1">
                <div class="col">
-                 <img id="<%= projects[i].id%>" src="<%= projects[i].image %>" alt="">
-                 <%= projects[i].projectName%>
-                </div>
+                 <a href="/singleProject/<%= projects[i].id%>">
+                  <%= projects[i].projectName %>
+                  <img id="<%= projects[i].id%>" src="<%= projects[i].image %>" alt="">
+                  <br>
+                  <p class="lead"><%= projects[i].description%></p>
+                 </a>
+               </div>
               </div>
             </div>
         <% } %>

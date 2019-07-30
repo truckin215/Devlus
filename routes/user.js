@@ -10,7 +10,7 @@ router.post('/addproject',userController.postProject)
 
 router.get('/profile', userController.profile)
 
-router.get('/singleProject',userController.singleProject)
+router.get('/singleProject/:id',userController.singleProject)
 
 router.get('/savedProjects', userController.savedProjects)
 

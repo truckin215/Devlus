@@ -27,14 +27,12 @@ exports.profile = (req,res) => {
     res.render('profile', {currentUser: req.user})
 }
 // GET input page at /singleProject
-exports.singleProject = (req,res) => {
-    exports.main = (req,res) => {
-        req.context.db.Projects.findAll({
-            attributes: ['id', 'projectName', 'image', 'location', 'description']
-        }).then(function(results){
-            res.render('singleProject', {projects: results})}
+exports.singleProject = (req,res) => {  
+        req.context.db.Projects.findOne({
+            where: { id: req.params.id }
+        }).then(function(result){
+            res.render('singleProject', {project: result})}
         )
-    }
 }
 // GET savedProjects page at /savedProjects
 exports.savedProjects = (req,res) => {

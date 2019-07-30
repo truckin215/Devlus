@@ -7,6 +7,7 @@ db.Projects.create({
     devCount: 10,
     location: "miami",
     payment: true,
+<<<<<<< HEAD
     length:"3 months",
     image:"http://codeskools.com/wp-content/uploads/2019/03/logo.png",
     startdate: "December",
@@ -129,3 +130,10 @@ db.Projects.create({
     startdate: "April 1st",
     close: false
 })
+=======
+    length:"3 month",
+    image:"http://codeskools.com/wp-content/uploads/2019/03/logo.png",
+    startdate: "December",
+    close: false
+});
+>>>>>>> 66fb474041d4dad53bfe2d8786517fe98be2f092
