@@ -1,7 +1,7 @@
 body {
     background-color: #b1e0e6;
   }
-  
+
 img {
     display: block;
     margin-left: auto;
@@ -24,14 +24,20 @@ img {
 
 #images1 {
     margin-left: 0px;
+    max-width: 500px;
+    max-height: 500px;  
     background: white;
 }
 #images2 {
     margin-left: 134px;
+    max-width: 500px;
+    max-height: 500px;
     background: white;
 }
 #images3 {
     margin-left: 134px;
+    max-width: 500px;
+    max-height: 500px;
     background: white;
 }
 .main-logo {
