@@ -40,7 +40,7 @@ exports.savedProjects = (req,res) => {
         req.context.db.userfavorites.findAll({
             attributes: ['id', 'projectName', 'image', 'location', 'description']
         }).then(function(results){
-            res.render('savedProjects', {favorites: results})}
+            res.render('savedProjects', {currentUser: req.user, favorites: results})}
         )
     }
 }
@@ -93,7 +93,8 @@ exports.postProject = (req, res) => {
         UserID:  req.user.id,
         projectName: req.body.projectName ,
         description: req.body.description ,
-        location: req.body.location
+        location: req.body.location,
+        image: req.body.image
 
     }).then(function(){
         res.redirect('/main');

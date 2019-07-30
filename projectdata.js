@@ -21,7 +21,7 @@ db.Projects.create({
     location: "Vero",
     payment: true,
     length:"Forever",
-    image:"/Devlus.png",
+    image:"/Devlus.jpeg",
     startdate: "July 31st",
     close: false
 })
@@ -99,7 +99,7 @@ db.Projects.create({
     location: "WA",
     payment: true,
     length:"22 years",
-    image:"/Microsoft.png",
+    image:"/Microsoft.jpg",
     startdate: "October 1st",
     close: false
 })
@@ -129,3 +129,16 @@ db.Projects.create({
     startdate: "April 1st",
     close: false
 })
+
+db.Projects.create({
+    UserID: 1 ,
+    projectName: "SkateHub",
+    description: "An upcoming app, that uses your location, be it GPS or zip code, and displays a map, where you can find a skate park near you, with ratings, and popularity.",
+    devCount: 20,
+    location: "Vero",
+    payment: true,
+    length:"14 years",
+    image:"/skatehub.png",
+    startdate: "October 1st",
+    close: false
+ })
