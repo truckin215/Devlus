@@ -8,10 +8,10 @@ img {
     margin-right: auto;
     }
     #Display {
-        margin-left: 370px;
+        margin-left: 135px;
     }
     #text1 {
-        margin-right: 135px;
+        margin: 20px 135px;
         background: white;
     }
     #text2 {

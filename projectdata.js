@@ -7,8 +7,8 @@ db.Projects.create({
     devCount: 10,
     location: "miami",
     payment: true,
-    length:"Three mmonths",
-    image:"/codeskools",
+    length:"Three months",
+    image:"/codeskools.png",
     startdate: "December",
     close: false
 })
@@ -21,7 +21,7 @@ db.Projects.create({
     location: "Vero",
     payment: true,
     length:"Forever",
-    image:"/Devlus",
+    image:"/Devlus.png",
     startdate: "July 31st",
     close: false
 })
@@ -34,7 +34,7 @@ db.Projects.create({
     location: "London",
     payment: true,
     length:"14 years",
-    image:"/Ubuntu",
+    image:"/Ubuntu.png",
     startdate: "October 20, 2004",
     close: false
 })
@@ -47,7 +47,7 @@ db.Projects.create({
     location: "FL",
     payment: true,
     length:"8 months",
-    image:"/Jungle",
+    image:"/Jungle.png",
     startdate: "August 20th",
     close: false
 })
@@ -60,7 +60,7 @@ db.Projects.create({
     location: "CA",
     payment: true,
     length:"7 years ",
-    image:"/Slack",
+    image:"/Slack.png",
     startdate: "August 2013",
     close: false
 })
@@ -73,7 +73,7 @@ db.Projects.create({
     location: "VA",
     payment: true,
     length:" 3 weeks",
-    image:"/Totel",
+    image:"/Totel.png",
     startdate: " August 15th",
     close: false
 })
@@ -86,7 +86,7 @@ db.Projects.create({
     location: "CA",
     payment: true,
     length:"30 years",
-    image:"/Google",
+    image:"/Google.png",
     startdate: "September 4, 1998",
     close: false
 })
@@ -99,7 +99,7 @@ db.Projects.create({
     location: "WA",
     payment: true,
     length:"22 years",
-    image:"/Microsoft",
+    image:"/Microsoft.png",
     startdate: "October 1st",
     close: false
 })
@@ -112,7 +112,7 @@ db.Projects.create({
     location: "TX",
     payment: true,
     length:"12 years",
-    image:"/Dell",
+    image:"/Dell.png",
     startdate: "May 12th",
     close: false
 })
@@ -125,7 +125,7 @@ db.Projects.create({
     location: "CA",
     payment: true,
     length:"50 years",
-    image:"/Apple",
+    image:"/Apple.png",
     startdate: "April 1st",
     close: false
 })
