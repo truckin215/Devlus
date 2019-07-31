@@ -44,10 +44,14 @@
            <img src="<%= currentUser.photos[0].value %>" alt="Placeholder" height="mx-auto" width="mx-auto">
          </div>
          <div class="col">
-           <p><%= currentUser.username %></p>
-           <p><%= currentUser.displayName %></p>
-           <p><%= currentUser._json.location%></p>
-           <p><%= currentUser.profileUrl%></p>
+           <br>
+           Username: <p class="h1"><%= currentUser.username %></p>
+           <br>
+           Name:<p class="h1"><%= currentUser.displayName %></p>
+           <br>
+           Location<p class="h1"><%= currentUser._json.location%></p>
+           <br>
+           Github:<p class="h1"><%= currentUser.profileUrl%></p>
          </div>
        </div>
        <div class="desc">
@@ -55,19 +59,9 @@
        <div class="profile21">
            <h1>Previous Projects</h1>
        </div>
-       <div class="ProjectSaved">
-           <div class="row">
-             <div class="col-sm">
-               <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" class="rounded mx-auto d-block" alt="Placeholder"></a>
-             </div>
-             <div class="col-sm">
-               <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" class="rounded mx-auto d-block" alt="Placeholder"></a>
-             </div>
-             <div class="col-sm">
-               <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" class="rounded mx-auto d-block" alt="Placeholder"></a>
-             </div>
-           </div>
-         </div>
+       <a href="singleProject/2">
+       <img class="devlus-saved" src="/Devlus.jpeg" alt="if this is not working ima cry">
+      </a>
        <!-- <div id="saved projects">
        </div> -->
    </div>
